@@ -21,7 +21,7 @@ if(location.pathname == '/juego_ahorcado/'){
 //----------------------------------- agregar -----------------------------------
 //-----------------------------------------------------------------------------
 
-if(location.pathname == '/D:/ONE_CURSO/Codigos/juego_ahorcado/agregar.html'){
+if(location.pathname == '/juego_ahorcado/agregar.html'){
     //aqui poner explicacion
     laAyuda();    
 
