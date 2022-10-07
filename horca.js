@@ -12,7 +12,7 @@ var cantidad_errores = 0;
 //----------------------------------- index -----------------------------------
 //-----------------------------------------------------------------------------
 
-if(location.pathname == '/juego_ahorcado/'){
+if(location.pathname == '/juego_ahorcado/' || location.pathname == '/juego_ahorcado/index.html'  ){
     //aqui poner explicacion
     laAyuda();
     
