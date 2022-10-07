@@ -1,0 +1,285 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    /*padding: 0px 20px;    /*afecta todo el docuemnto*/
+    /*background: rgb(5, 5, 54);*/
+    
+    background: linear-gradient(black,#002b56, #2f70b3);
+    box-sizing: border-box;
+    border: 2px solid;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+main{
+    width: 100%;
+    height: 78%; /*al modificar este valor alteras tambien al footer*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo_alura{
+    display: flex;
+    width: 100%;
+    margin: 20px 0px;
+    background-color: black;
+    cursor: pointer; 
+}
+
+.logo_ayuda{
+    width: 46px;
+    height: 36px;
+    margin: 20px 0px;
+    align-items: center;
+}
+
+.ayuda{    
+    display: none;    
+    position: absolute;
+    text-align: justify;
+    padding: 1.2vh 2.3vw 2vh 5vw;    
+    color: white;
+    font-size: calc(0.8em + 0.8vw);
+    border: 1px solid yellow;   
+    background: linear-gradient(0.25turn,#002b56,#265a8f,#002b56);
+    box-shadow: 0 0 2em rgb(6, 139, 247);
+    margin:10vh 30vw;
+    border-radius: 25px;
+}
+
+h2{
+    text-align: center;
+    color: yellow;
+    padding: 0px 0px 13px 0px;
+   /* font-size: 2.3vw;    
+    color: yellow;*/
+}
+
+li{
+    text-align: justify;
+    padding: 5px 0px;
+  /*  font-size: 1.8vw;    
+    color: white;*/
+}
+
+ol{
+    list-style: circle;
+}
+
+.boton_jugar, .boton_agregar{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+#iniciar{
+    color: white;
+    /*background:#0a3871;*/
+    background: linear-gradient(rgb(3, 2, 49),#002b56, #265a8f);
+    border-radius: 34px;   
+    border: 0.5px solid yellow;
+    /*margin: 0 0 0 50px;*/
+    font-size: 34px;
+    font-weight: bold;
+    padding: 13px 55px;  
+}
+
+#agregar{
+    color: white;
+    /*background:#0a3871;*/
+    background: linear-gradient(rgb(3, 2, 49),#002b56, #265a8f);
+    border-radius: 34px;   
+    border: 0.5px solid yellow;
+    /*margin: 0 0 0 50px;*/
+    font-size: 13px;    
+    padding: 10px 20px;  
+}
+
+#re_iniciar, #desistir, #guardar, #cancelar{
+    color: white;
+    /*background:#0a3871;*/
+    background: linear-gradient(rgb(3, 2, 49),#002b56, #265a8f);
+    border-radius: 34px;   
+    border: 0.5px solid yellow;
+    /*margin: 0 0 0 50px;*/
+    font-size: 21px;    
+    padding: 13px 21px;  
+}
+
+.dibujo{    
+    position: relative;
+    /*background: red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#gano {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(images/you\ win\ neon.png);
+    background-repeat: no-repeat;
+    background-size: contain;    
+    background-position: center;
+}
+
+#perdio{
+    display: none;    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;   
+    background-image: url(images/you\ lose\ neon.png);
+    background-repeat: no-repeat;
+    background-size: contain;    
+    background-position: center;    
+}
+
+.intentos{
+    color: aqua;
+    font-size: 15px;
+    text-align: center;
+}
+
+/*
+#forca{
+    background: rgb(55, 75, 202);
+}
+*/
+
+.guiones_letras{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#palabra_a_adivinar{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#letras_usadas{
+    width: 100%;
+    height: 45%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #75e2fd;
+}
+
+.span {
+    font-size: 35px;
+    border-bottom: 2px solid white;   /* genera un borde inferior */
+    width: 40px;
+    margin-right: 10px;
+    text-align: center;
+    color: yellow;
+}
+
+/*
+.subrayado{
+    display: flex;
+    justify-content: center;
+}
+*/
+
+
+.botones{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 21px;
+    margin: 20px 0px;
+    border-top: 8px;    
+    border-style: solid;
+    border-image: linear-gradient(34deg, #063869, #017cf7, #063869,#017cf7,#063869 ) 1;
+    border-radius: 5px;
+    padding-top: 25px;
+}
+
+.botones_agregar{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 21px;
+    margin: 20px 0px;
+}
+
+
+.input_texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#input_tex{
+    font-size: 32px;
+    color: whitesmoke;
+    border: none;
+    background: none;
+    text-align: center;
+    outline: none;
+    resize: none;
+    margin: 10px 0px;
+}
+
+.exclamacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #73869d ;
+    font-size: 15px;
+    margin: 10px 10px;
+
+}
+
+#frase{
+    margin-left: 5px;
+}
+
+
+footer{    
+    background: linear-gradient(0.15turn,#002b56,#3b8ddf, #002b56);    
+    text-align: center;    
+    height:6.5%;
+    width: 100%;
+    padding: 7px 0px 5px 0px;
+    /*background: white;*/    
+    margin-top: 5px;    
+}
+
+.logos_pie{        
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 5px;
+}
+
+.logo_linkedin, .logo_github {
+    width: 20px;
+    height: 20px;
+}

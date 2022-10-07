@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Juego Ahorcado</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">        
+    </head>
+
+    <body>
+
+        <header>
+            <!-- cabecera-->
+            <a href="https://www.aluracursos.com/" target="_blank"><img class="logo_alura" src="images/icono_alura_blanco.png" alt="Logo Alura"></a>            
+            <img class="logo_ayuda" src="images/icono_ayuda_blanco.png" alt="Logo ayuda">
+        </header>
+
+
+        <main>
+            <!-- cuerpo-->
+            <div class="ayuda">
+                <h2>Instrucciones de Juego</h2>                
+                <ol start="1">                  
+                    <li>El “Ahorcado” es un juego de adivinanza de palabras.</li>
+                    <li>Por cada error, se irá dibujando una parte del cuerpo.</li>
+                    <li>El juego terminara si adivinas la palabra antes de que se complee el dibujo.</li>
+                    <li>Puedes adicionar nuevas palabras.</li>                    
+                </ol>
+            </div>
+            
+            <div class="dibujo">
+                <!-- dibujo = define dimensiones -->
+                <!-- ancho 310 alto 410s -->
+                <div>
+                    <canvas id="horca" width= "350" height="400" > </canvas>
+                    <!-- <canvas id="cabeza" width= "350" height="450" > </canvas> --> 
+                    <div id="gano"></div>
+                    <div id="perdio"></div>
+                </div>
+            </div>
+
+            <!-- Canvas -->
+            
+            <section class="intentos">
+                Tienes
+                <span class="numero_intentos"></span>
+                intento(s)
+            </section>
+
+            <section class="guiones_letras">
+                <!-- Letras-->
+                <div>
+                    <!-- ▼ lo quite porque genera guiones individuales, usar  y hacer que funcione en el futuro ▼ -->
+                    <!--<canvas id="forca" width= "350" height="30" > </canvas>-->
+                    <div id="palabra_a_adivinar"></div>
+                    <!-- Aqui va span-->
+                    <div id="letras_usadas"></div>
+                </div>
+                <!-- Giones-->
+            </section>
+
+            <section class="botones">
+                <!-- botones-->
+                <div>
+                    <button id="re_iniciar" onclick="btnReIniciar()" >Jugar de nuevo</button>
+                </div>
+                <div>
+                    <button id="desistir" onclick="btnDesistir()" >Desistir</button>
+                </div>                
+            </section>           
+            
+        </main>
+
+        <script src="horca.js"></script>
+        <!--<script src="canvas.js"></script>-->
+
+        <footer class="contenedor_pie">
+            <!-- pie de pagina-->
+            <div class="logos_pie">
+                <a href="https://www.linkedin.com/in/angel-g-vargas" target="_blank"><img class="logo_linkedin" src="images/icono_linkedin_negro.png" alt="Logo Linkedin"></a>                
+                <a href="https://github.com/naysiul" target="_blank"><img class="logo_github" src="images/icono_github_negro.png" alt="Logo Github"></a>                
+            </div> 
+            <p>Angel Gonzales Vargas</p>          
+
+        </footer>
+
+    </body>
+
+</html>

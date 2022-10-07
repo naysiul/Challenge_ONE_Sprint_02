@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Agregar</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+
+        <header>
+            <!-- cabecera-->
+
+            <a href="https://www.aluracursos.com/" target="_blank"><img class="logo_alura" src="images/icono_alura_blanco.png" alt="Logo Alura"></a>
+            
+            <img class="logo_ayuda" src="images/icono_ayuda_blanco.png" alt="Logo ayuda">
+
+        </header>
+
+
+        <main>
+            <!-- cuerpo-->
+            <div class="ayuda">
+                <h2>Instrucciones de Juego</h2>                
+                <ol start="1">                  
+                    <li>El “Ahorcado” es un juego de adivinanza de palabras.</li>
+                    <li>Por cada error, se irá dibujando una parte del cuerpo.</li>
+                    <li>El juego terminara si adivinas la palabra antes de que se complee el dibujo.</li>
+                    <li>Puedes adicionar nuevas palabras.</li>                    
+                </ol>
+            </div>
+
+            <div class="input_texto">
+                <!-- ingresar palabra-->
+                <textarea id="input_tex" autofocus cols="50" rows="10" placeholder="Ingrese una palabra" onkeypress="reglaEscritura(event)"></textarea>
+            </div>
+
+            <div class="exclamacion">
+                <img src="images/alura admiracion_azulado.png" alt="alerta">
+                <p id="frase"> Máx. de 8 letras.</p>
+            </div>
+
+            <div class="botones_agregar">
+                <!--<a href="#juego"><button id="guardar" onclick="btnGuardar()">Guardar y empezar</button></a>-->
+                <button id="guardar" onclick="btnGuardar()">Guardar y empezar</button>
+                <button id="cancelar" onclick="btnDesistir()">Cancelar</button>
+            </div>
+            
+        </main>
+
+
+        <!--<script src="canvas.js"></script>-->
+        <script src="horca.js"></script>
+
+
+        <footer>
+            <!-- pie de pagina-->
+            <div class="logos_pie">
+                <a href="https://www.linkedin.com/in/angel-g-vargas" target="_blank"><img class="logo_linkedin" src="images/icono_linkedin_negro.png" alt="Logo Linkedin"></a>                
+                <a href="https://github.com/naysiul" target="_blank"><img class="logo_github" src="images/icono_github_negro.png" alt="Logo Github"></a>                
+            </div>     
+            
+            <p>Angel Gonzales Vargas</p>
+
+        </footer>
+
+    </body>
+
+</html>
