@@ -35,7 +35,7 @@ if(location.pathname == '/juego_ahorcado/agregar.html'){
         else {            
             console.log( "expresion: " + expresion);        
             localStorage.setItem("miUsb", expresion);
-            location.assign("/D:/ONE_CURSO/Codigos/juego_ahorcado/juego.html");
+            location.assign("/juego_ahorcado/juego.html");
         }      
             
     }
@@ -284,8 +284,3 @@ function laAyuda() {
 }
 
 //.............🡡............. la ventana de ayuda .............🡡.............
-
-
-
-
-
