@@ -2,6 +2,7 @@
 var auxiliar = ["casa"];
 var miUsb = [];
 var cocoa = [];
+console.log(location.pathname);
 
 //Selectores
 var palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT","HTML", "CSS"];
@@ -11,7 +12,7 @@ var cantidad_errores = 0;
 //----------------------------------- index -----------------------------------
 //-----------------------------------------------------------------------------
 
-if(location.pathname == './juego_ahorcado/index.html'){
+if(location.pathname == '/juego_ahorcado/index.html'){
     //aqui poner explicacion
     laAyuda();
     
@@ -58,7 +59,7 @@ if(location.pathname == '/D:/ONE_CURSO/Codigos/juego_ahorcado/agregar.html'){
 //----------------------------------- juego -----------------------------------
 //-----------------------------------------------------------------------------
 
-if(location.pathname == '/D:/ONE_CURSO/Codigos/juego_ahorcado/juego.html'){
+if(location.pathname == '/juego_ahorcado/juego.html'){
     laAyuda();
     var palabra_a_adivinar = document.querySelector("#palabra_a_adivinar");
     var letras_usadas = document.querySelector("#letras_usadas");
