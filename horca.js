@@ -113,8 +113,22 @@ function escojerPalabraSecreta(){
 
     function tecla_presionada(x) {
         var span = document.querySelectorAll("#palabra_a_adivinar span"); // consulta y selecionda todos los ID #..
-        var letraEnMayuscula = x.key.toUpperCase();  //convierto la letra presionada a mayuscula
-        console.log(letraEnMayuscula);  //muestra en consola cada letra en mayuscula
+        var letraEnMayuscula = x.key.toUpperCase();  //convierto la letra presionada a mayuscula        
+        console.log("la letra mayuscula es: " + letraEnMayuscula);  //muestra en consola cada letra en mayuscula
+        //verificamos que no pasen simbolos
+        var verificacion = letraEnMayuscula.charCodeAt(0);
+        console.log("en unicode es: " + verificacion);        
+        if( verificacion >= 65 && verificacion <= 90) {        //mayusculas y espacio vacio
+            console.log("usable");        		
+        }
+        else {        
+            console.log("no usable");              
+            alert(" No use minúsculas, acentos ni simbolos. Empiece otra vez");
+            //inputTexto.value = "";
+            console.log(verificacion);
+            location.reload(); //recarga pagina            
+        }        
+
         var acerto = false;    //pongo la variable acerto en falso como valor inicial
         letrasPresionadas.push(letraEnMayuscula); // almaceno o subo letraEnMayuscula en letrasPresionadas !!!
         var letrasPresionadas2 = letrasPresionadas.filter( // impide repeticion de letras en letrasPresionadas !!!
