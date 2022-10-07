@@ -12,7 +12,7 @@ var cantidad_errores = 0;
 //----------------------------------- index -----------------------------------
 //-----------------------------------------------------------------------------
 
-if(location.pathname == '/juego_ahorcado/index.html'){
+if(location.pathname == '/juego_ahorcado/'){
     //aqui poner explicacion
     laAyuda();
     
@@ -264,7 +264,7 @@ function btnReIniciar(){
 
 // regresa al menu principal
 function btnDesistir(){
-    location.assign("/D:/ONE_CURSO/Codigos/juego_ahorcado/index.html");
+    location.assign("/juego_ahorcado/index.html");
     localStorage.clear(); //para borrar
 }
 
