@@ -11,7 +11,7 @@ var cantidad_errores = 0;
 //----------------------------------- index -----------------------------------
 //-----------------------------------------------------------------------------
 
-if(location.pathname == '/D:/ONE_CURSO/Codigos/juego_ahorcado/index.html'){
+if(location.pathname == '/juego_ahorcado/index.html'){
     //aqui poner explicacion
     laAyuda();
     
